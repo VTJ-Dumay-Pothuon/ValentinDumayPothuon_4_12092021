@@ -27,9 +27,9 @@
 
 <body>
 	<!-- bloc-0 -->
-	<header id="bloc-0" class="bgc-white l-bloc">
+	<header id="bloc-0" class="bgc-white l-bloc" role="banner">
 		<div class="container bloc-sm">
-			<nav class="navbar row">
+			<nav class="navbar row" role="navigation" aria-label="Menu principal">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="index.html">
 						<img src="img/la-chouette-agence.png" alt="Logo de la chouette agence" height="40" />
@@ -60,7 +60,7 @@
 	<!-- bloc-0 END -->
 
 	<!-- Principal conteneur -->
-	<main>
+	<main role="main">
 		<!-- bloc-1-presentation -->
 		<section id="bloc-1-hero" class="bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax">
 			<div class="container bloc-lg">
@@ -78,20 +78,21 @@
 		<!-- bloc-1-presentation END -->
 
 		<!-- bloc-2-services -->
-		<section id="bloc-2-services" class="bgc-white l-bloc">
+		<section id="bloc-2-services" class="bgc-white l-bloc"
+		role="region" aria-label="Qui sommes-nous">
 			<div class="container bloc-md">
 				<div class="row">
 					<div class="col-sm-12 text-center">
-						<h2>La chouette agence est une agence de web design qui aide<br/> 
+						<h2>La chouette agence est une agence de web design qui aide<br aria-hidden="true"/> 
 						les entreprises à devenir attractives et visibles sur Internet.</h2>
 					</div>
 				</div>
 				<div class="row voffset-lg med-width-whitespace">
-					<div class="col-sm-4">
+					<div class="col-sm-4" role="region" aria-labelledby="icon_1">
 						<div class="text-center">
 							<span class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg"></span>
 						</div>
-						<h3 class="mg-md text-center">
+						<h3 class="mg-md text-center" id="icon_1">
 							Web design
 						</h3>
 						<p class="text-center ">
@@ -99,23 +100,23 @@
 							zéro, laissez-nous vous réaliser un design dont vous serez fier.
 						</p>
 					</div>
-					<div class="col-sm-4">
+					<div class="col-sm-4" role="region" aria-labelledby="icon_2">
 						<div class="text-center">
 							<span class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg"></span>
 						</div>
-						<h3 class="mg-md text-center">
-							&nbsp;Stratégie
+						<h3 class="mg-md text-center" id="icon_2">
+							Stratégie
 						</h3>
 						<p class="text-center ">
 							Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre
 							vos objectifs commerciaux afin de vous proposer le meilleur design possible.<br>
 						</p>
 					</div>
-					<div class="col-sm-4">
+					<div class="col-sm-4" role="region" aria-labelledby="icon_3">
 						<div class="text-center">
 							<span class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg"></span>
 						</div>
-						<h3 class="mg-md text-center">
+						<h3 class="mg-md text-center" id="icon_3">
 							Illustrations
 						</h3>
 						<p class="text-center ">
@@ -139,7 +140,8 @@
 		<!-- bloc-2-services END -->
 
 		<!-- bloc-3-what-i-do -->
-		<section id="bloc-3-what-i-do" class="tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax">
+		<section id="bloc-3-what-i-do" role="region" aria-label="Que faisons-nous" 
+		class="tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax">
 			<div class="container bloc-lg">
 				<div class="row tight-width-whitespace black-background">
 					<div class="col-sm-12">
@@ -149,10 +151,10 @@
 							.<br>
 						</h2>
 						<p class="text-center white">
-							Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale, qu’elles
+							Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locales, qu’elles
 							aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous
 							ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à
-							nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés,
+							nous contacter. Nous travaillerons ensemble pour créer des sites beaux et bien structurés,
 							qui seront facilement trouvable sur les moteurs de recherche. <br><br><a
 								class="ltc-white bold-link" href="page2.html">Contactez notre équipe</a><br>
 						</p>
@@ -163,34 +165,35 @@
 		<!-- bloc-3-what-i-do END -->
 
 		<!-- bloc-4-portfolio -->
-		<section id="bloc-4-portfolio" class="bgc-white bg-lines-h2-bg bg-repeat l-bloc">
+		<section id="bloc-4-portfolio" role="region" aria-label="Notre portfolio"
+		class="bgc-white bg-lines-h2-bg bg-repeat l-bloc">
 			<div class="container bloc-lg">
 				<div class="row">
 					<div class="col-sm-12 text-center">
-						<h2>Nous travaillons avec beaucoup de clients,<br/>
+						<h2>Nous travaillons avec beaucoup de clients,<br aria-hidden="true"/>
 						voici nos réalisations.</h2>
 					</div>
 				</div>
 				<div class="row tight-width-whitespace portfolio-row">
-					<div class="col-sm-6">
+					<div class="col-sm-6" role="region" aria-labelledby="pic_1">
 						<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1"
 							data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img
 								src="img/1.jpg"
 								alt="Pile de journaux colorés"
 								class="img-responsive portfolio-thumb" /></a>
-						<h3 class="mg-md text-center">
+						<h3 class="mg-md text-center" id="pic_1">
 							Refonte d'un site web pour un journal local
 						</h3>
 						<p class="text-center">
 							Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.
 						</p>
 					</div>
-					<div class="col-sm-6">
+					<div class="col-sm-6" role="region" aria-labelledby="pic_2">
 						<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1"
 							data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img
 								src="img/2.jpg" class="img-responsive portfolio-thumb"
 								alt="Femme qui photographie Lyon de nuit" /></a>
-						<h3 class="mg-md text-center">
+						<h3 class="mg-md text-center" id="pic_2">
 							Création d'un site web pour photographes
 						</h3>
 						<p class="text-center">
@@ -199,12 +202,12 @@
 					</div>
 				</div>
 				<div class="row tight-width-whitespace portfolio-row">
-					<div class="col-sm-6">
-						<a href="#" data-lightbox="img/3.jpeg" data-gallery-id="gallery-1"
+					<div class="col-sm-6" role="region" aria-labelledby="pic_3">
+						<a href="#" data-lightbox="img/3.jpg" data-gallery-id="gallery-1"
 							data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><img
 								src="img/3.jpg" class="img-responsive portfolio-thumb"
 								alt="Outils de création vidéo sur une table" /></a>
-						<h3 class="mg-md text-center">
+						<h3 class="mg-md text-center" id="pic_3">
 							Création d'un site internet pour un voyageur
 						</h3>
 						<p class="text-center">
@@ -212,12 +215,12 @@
 							articles de ce voyageur.
 						</p>
 					</div>
-					<div class="col-sm-6">
-						<a href="#" data-lightbox="img/4.jpeg" data-gallery-id="gallery-1"
+					<div class="col-sm-6" role="region" aria-labelledby="pic_4">
+						<a href="#" data-lightbox="img/4.jpg" data-gallery-id="gallery-1"
 							data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img
 								src="img/4.jpg" class="img-responsive portfolio-thumb"
 								alt="bureau encombré dans une agence de mariage" /></a>
-						<h3 class="mg-md text-center">
+						<h3 class="mg-md text-center" id="pic_4">
 							Conception d'un site pour une agence de mariage
 						</h3>
 						<p class="text-center">
@@ -231,7 +234,8 @@
 		<!-- bloc-4-portfolio END -->
 
 		<!-- bloc-5-cta -->
-		<section id="bloc-5-cta" class="bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper">
+		<section id="bloc-5-cta" role="region" aria-label="À votre tour"
+		class="bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper">
 			<div class="container bloc-lg">
 				<div class="row">
 					<h2 class="mg-md text-center tc-white">
@@ -249,7 +253,7 @@
 	<!-- Principal conteneur END -->
 
 	<!-- Footer - bloc-8 -->
-	<footer id="bloc-8" class="bgc-atomic-tangerine d-bloc">
+	<footer id="bloc-8" class="bgc-atomic-tangerine d-bloc" role="contentinfo">
 		<div class="container bloc-sm">
 			<div class="row">
 				<div class="col-sm-12">

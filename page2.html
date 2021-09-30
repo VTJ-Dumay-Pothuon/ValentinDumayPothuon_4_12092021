@@ -28,9 +28,9 @@
 
 <body>
 	<!-- bloc-0 -->
-	<header id="bloc-0" class="bgc-white l-bloc">
+	<header id="bloc-0" class="bgc-white l-bloc" role="banner">
 		<div class="container bloc-sm">
-			<nav class="navbar row">
+			<nav class="navbar row" role="navigation" aria-label="Menu principal">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="index.html">
 						<img src="img/la-chouette-agence.png" alt="Logo de la chouette agence" height="40" />
@@ -61,7 +61,7 @@
 	<!-- bloc-0 END -->
 
 	<!-- Principal conteneur -->
-	<main>
+	<main role="main">
 		<!-- bloc-6 -->
 		<section id="bloc-6" class="bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper">
 			<div class="container bloc-lg">
@@ -85,10 +85,11 @@
 			<div class="container bloc-lg">
 				<div class="row">
 					<div class="col-sm-6">
-						<form id="form_1" novalidate success-msg="Your message has been sent."
-							fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+						<form id="form_1" role="form" 
+						novalidate success-msg="Votre message a été envoyé."
+							fail-msg="Oups, il semble que notre serveur mail ne répond pas. Désolé pour la gêne occasionnée !">
 							<div class="form-group">
-								<label>
+								<label for="name">
 									Nom
 								</label>
 								<input id="name" class="form-control" required />
@@ -96,17 +97,17 @@
 							<div class="form-group">
 								<label>
 									Adresse email
-								</label>
+								</label for="email">
 								<input id="email" class="form-control" type="email" required />
 							</div>
 							<div class="form-group">
-								<label>
+								<label for="input_504">
 									Comment nous avez-vous connu ?
 								</label>
-								<input class="form-control" type="email" required id="input_504" />
+								<input class="form-control" type="text" required id="input_504" />
 							</div>
 							<div class="form-group">
-								<label>
+								<label for="message">
 									Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 								</label><textarea id="message" class="form-control" rows="4" cols="50"
 									required></textarea>
@@ -136,7 +137,7 @@
 	<!-- Principal conteneur END -->
 
 	<!-- Footer - bloc-8 -->
-	<footer id="bloc-8" class="bgc-atomic-tangerine d-bloc">
+	<footer id="bloc-8" class="bgc-atomic-tangerine d-bloc" role="contentinfo">
 		<div class="container bloc-sm">
 			<div class="row">
 				<div class="col-sm-12">
