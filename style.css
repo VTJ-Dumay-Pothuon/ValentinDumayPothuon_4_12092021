@@ -96,7 +96,7 @@ section .container {
 }
 
 .b-parallax {
-    background-attachment: fixed;
+    background-attachment: fixed !important;
 }
 
 .d-bloc {
@@ -544,6 +544,7 @@ a[data-lightbox]:hover::before {
     height: 50px;
     margin-left: -25px;
     border-radius: 50%;
+    padding-top: 3px;
     background: rgba(0, 0, 0, .6);
     color: #FFF;
     font-weight: 100;
@@ -593,6 +594,7 @@ a[data-lightbox]:hover img {
     top: 20px;
     right: 20px;
     z-index: 20;
+    padding-top: 3px;
     background: rgba(0, 0, 0, .5);
     border: none;
     line-height: 30px;
