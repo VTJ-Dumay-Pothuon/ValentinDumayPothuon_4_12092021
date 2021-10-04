@@ -28,9 +28,9 @@
 
 <body>
 	<!-- bloc-0 -->
-	<header id="bloc-0" class="bgc-white l-bloc" role="banner">
+	<header id="bloc-0" class="bgc-white l-bloc">
 		<div class="container bloc-sm">
-			<nav class="navbar row" role="navigation" aria-label="Menu principal">
+			<nav class="navbar row" aria-label="Menu principal">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="index.html">
 						<img src="img/la-chouette-agence.png" alt="Logo de la chouette agence" height="40" />
@@ -61,7 +61,7 @@
 	<!-- bloc-0 END -->
 
 	<!-- Principal conteneur -->
-	<main role="main">
+	<main>
 		<!-- bloc-6 -->
 		<section id="bloc-6" class="bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper">
 			<div class="container bloc-lg">
@@ -85,9 +85,8 @@
 			<div class="container bloc-lg">
 				<div class="row">
 					<div class="col-sm-6">
-						<form id="form_1" role="form" 
-						novalidate success-msg="Votre message a été envoyé."
-							fail-msg="Oups, il semble que notre serveur mail ne répond pas. Désolé pour la gêne occasionnée !">
+						<h1>Contactez-nous !</h1>
+						<form id="form_1" novalidate>
 							<div class="form-group">
 								<label for="name">
 									Nom
@@ -95,9 +94,9 @@
 								<input id="name" class="form-control" required />
 							</div>
 							<div class="form-group">
-								<label>
+								<label for="email">
 									Adresse email
-								</label for="email">
+								</label>
 								<input id="email" class="form-control" type="email" required />
 							</div>
 							<div class="form-group">
@@ -137,7 +136,7 @@
 	<!-- Principal conteneur END -->
 
 	<!-- Footer - bloc-8 -->
-	<footer id="bloc-8" class="bgc-atomic-tangerine d-bloc" role="contentinfo">
+	<footer id="bloc-8" class="bgc-atomic-tangerine d-bloc">
 		<div class="container bloc-sm">
 			<div class="row">
 				<div class="col-sm-12">
